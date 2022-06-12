@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const AddTodo = ({ onCreate }) => {
   const [value, setValue] = useState("");
 
+  // Добавление новой задачи с последующим очищением инпута
   const handleSubmit = (e) => {
     e.preventDefault();
     if (value.trim()) {

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const TodoItem = ({ todo, onChange }) => {
+  // Создание  динамического класса для выполненной задачи
   const classes = [];
   if (todo.completed) {
     classes.push("task-done");

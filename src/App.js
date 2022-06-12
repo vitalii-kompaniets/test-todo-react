@@ -9,6 +9,7 @@ function App() {
     { id: 3, completed: false, title: "Приступить к работе" },
   ]);
 
+  // Отмечает выполнено/невыполнено на задаче
   const toggleTodo = (id) => {
     setTodos(
       todos.map((todo) => {
@@ -20,6 +21,7 @@ function App() {
     );
   };
 
+  // Добавление новой задачи в массив todos
   const addTodo = (title) => {
     setTodos(
       todos.concat([

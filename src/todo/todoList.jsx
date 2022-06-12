@@ -5,10 +5,12 @@ import TodoItem from "./todoItem";
 const TodoList = ({ todos, onToggle }) => {
   const [filtered, setFiltered] = useState(todos);
 
+  // Рендер списка задач при добавлении новой задачи
   useEffect(() => {
     setFiltered(todos);
   }, [todos]);
 
+  // Сортировка задач (все, выполненные,невыполненные)
   const todoFilter = (status) => {
     if (status === "all") {
       setFiltered(todos);
