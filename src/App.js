@@ -39,11 +39,7 @@ function App() {
       <h1>Todos</h1>
       <div className="content">
         <AddTodo onCreate={addTodo} />
-        {todos.length ? (
-          <TodoList todos={todos} onToggle={toggleTodo} />
-        ) : (
-          <p>Нет задач</p>
-        )}
+        <TodoList todos={todos} onToggle={toggleTodo} />
       </div>
     </div>
   );
